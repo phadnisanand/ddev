@@ -1,0 +1,28 @@
+uuid: 22bdb9f4-f610-4a7c-9d20-08016b016cde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.testing.field_firstname
+    - node.type.testing
+  module:
+    - user
+id: node.testing.default
+targetEntityType: node
+bundle: testing
+mode: default
+content:
+  field_firstname:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
